@@ -1,0 +1,3422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+  z-index: 1;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .but {
+    visibility: hidden;
+  }
+  .head {
+    height: 6vh;
+    width: 100vw;
+    background-color: lightgray;
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+  }
+  .loo {
+    height: 5vw;
+    width: 10vw;
+  }
+  .cat {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1vw;
+    gap: 3px;
+  }
+  .gaduur {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .dotuur {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .gadna {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .search {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search:hover {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .searchSVG {
+    height: 18px;
+    width: 30px;
+  }
+  .block {
+    height: 2.5vw;
+    width: 8vw;
+    background-color: #0040d4;
+    color: white;
+    font-size: 1vw;
+
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block:hover {
+    background-color: white;
+    color: #0040d4;
+    cursor: pointer;
+  }
+  .ug {
+    background-color: #adb5bd;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 2vw;
+    width: 55vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 1vw;
+  }
+  .blink {
+    background-color: orange;
+    width: 6vw;
+    height: 2vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: black;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: anivch;
+    display: flex;
+    align-items: center;
+    font-size: 0.7vw;
+    justify-content: center;
+  }
+  @keyframes anivch {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .Lemonade {
+    display: flex;
+    align-items: center;
+  }
+  .zurag1 {
+    background-image: url("https://dash-api.yld.mn/api/image/c76d7a96-6ba0-4b7d-80d3-41e812370818");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 36vw;
+    height: 20vw;
+    padding: 0;
+    border: #adb5bd 1px solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(247, 248, 256);
+  }
+  .overlay1 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag1:hover .overlay1 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .text1 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 0.7vw;
+  }
+  .text2 {
+    margin: 5px;
+    font-size: 0.7vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text3 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 0.7vw;
+  }
+  .text4 {
+    color: #0040d4;
+    margin: 5px;
+    border-top: #a3a3a3 1px solid;
+    font-size: 0.7vw;
+  }
+  .text7 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 0.7vw;
+  }
+  .text5 {
+    margin: 5px;
+    font-size: 0.7vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text6 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 0.7vw;
+  }
+  .back {
+    background-color: white;
+    height: 4.5vw;
+    width: 35.94vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .back1 {
+    background-color: white;
+    height: 10vw;
+    width: 22.8vw;
+    border-bottom: 0;
+    border-top: solid 1px #a3a3a3;
+
+    cursor: pointer;
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag2 {
+    background-image: url("https://dash-api.yld.mn/api/image/20ade56e-8c2a-4a20-9edb-f240f84deb1e");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: #a3a3a3 1px solid;
+
+    width: 23vw;
+    height: 20vw;
+    background-color: rgb(247, 248, 256);
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .zurag2:hover .overlay2 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .ehni {
+    display: flex;
+    gap: 1.9vw;
+  }
+  .back2 {
+    background-color: white;
+
+    width: 22.97vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .biggest {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 2.5vw;
+  }
+  .hoyrdahi {
+    display: flex;
+    justify-content: center;
+    gap: 0.5vw;
+  }
+  .scroll {
+    height: 20vw;
+    width: 20vw;
+
+    background-color: black;
+    border-radius: 6px;
+    overflow-y: scroll;
+
+    scrollbar-color: orange black;
+    border-radius: 6px;
+    scroll-behavior: smooth;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+  }
+  .spam {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+    height: 3vw;
+    width: 20vw;
+    margin: 0.5vw;
+    gap: 0.2vw;
+    font-size: 0.7vw;
+  }
+  .grad {
+    background-image: url("https://dash-api.yld.mn/api/image/7c3c37d5-408d-4a41-b89e-14a83186a76f");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height: 20vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 6px;
+  }
+  .overGrad {
+    gap: 5px;
+    border-radius: 6px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), transparent);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 8px;
+
+    transition: all 0.4s ease;
+  }
+
+  .grad:hover .overGrad {
+    cursor: pointer;
+    padding-top: 300px !important;
+    transition: all 0.4s ease;
+  }
+  .white {
+    color: white;
+    font-size: 1vw;
+  }
+  .bungu {
+    border: #adb5bd 1px solid;
+    border-radius: 6px;
+    gap: 0.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #adb5bd 1px solid;
+    cursor: pointer;
+    width: 20vw;
+    height: 20vw;
+  }
+  .dungu1 {
+    width: 17vw;
+    gap: 10px;
+    padding: 0.3vw;
+    color: #0040d4;
+    font-size: 0.7vw;
+  }
+  .dungu {
+    background-color: white;
+    border-top: #adb5bd 1px solid;
+    width: 17vw;
+    gap: 10px;
+    padding: 0.3vw;
+    font-size: 0.7vw;
+  }
+  .dungu4 {
+    margin: 0.3vw;
+    width: 17vw;
+    font-size: 0.7vw;
+  }
+  .dungu2 {
+    margin: 0.3vw;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1vw;
+  }
+  .dungu3 {
+    color: #adb5bd;
+    margin: 0.3vw;
+    font-size: 0.7vw;
+  }
+  .tomZ {
+    background-image: url(https://lemonpress.mn/assets/subscribe-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 61vw;
+    height: 17vw;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jijigZ {
+    background-color: white;
+    border-radius: 24px;
+    height: 13vw;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .saral {
+    color: #adb5bd;
+    font-size: 0.7vw;
+  }
+  .hemjee {
+    font-size: 1vw;
+  }
+  .huh {
+    color: #0040d4;
+    font-size: 1vw;
+    margin-left: 5px;
+  }
+  .laa {
+    font-size: 1vw;
+  }
+  .emal {
+    border: 1px #0040d4 solid;
+    height: 2.5vw;
+    width: 13vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px;
+    font-size: 1vw;
+  }
+  .button {
+    height: 2.5vw;
+    width: 6vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px #0040d4 solid;
+    background-color: #0040d4;
+    font-size: 0.7vw;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0040d4 1px solid;
+    border-radius: 6px;
+    background-color: #0040d4;
+    width: min-content;
+  }
+  .ad1 {
+    background-image: url(https://dash-api.yld.mn/api/image/ce1c9351-dd60-43f2-b566-ef46c69c0dfa);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+
+    border: 1px #adb5bd solid;
+  }
+  .over-ad1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .ad1:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ug1 {
+    color: #0040d4;
+    font-size: 1vw;
+  }
+  .ug2 {
+    color: black;
+    font-size: 1vw;
+  }
+  .ug3 {
+    color: #adb5bd;
+    font-size: 1vw;
+  }
+  .ugniiG {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width: 150%;
+
+    background-color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ad2 {
+    background-image: url(https://dash-api.yld.mn/api/image/a525a932-55bd-4e7a-974d-bdd247bb0f9b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad2:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad3 {
+    background-image: url(https://dash-api.yld.mn/api/image/ff06726d-07d9-4983-b4bf-f754206a2e2b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad3:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad4 {
+    background-image: url(https://dash-api.yld.mn/api/image/b8acef42-3997-4a3c-9203-6836a67a8c99);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad4:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad5 {
+    background-image: url(https://dash-api.yld.mn/api/image/f3f74d5a-0f6a-4dcb-abef-b29bc06db585);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+
+  .ad5:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad6 {
+    background-image: url(https://dash-api.yld.mn/api/image/dc88ebc3-655a-4885-9d92-4466f18fd3da);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad6:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad7 {
+    background-image: url(https://dash-api.yld.mn/api/image/d2f4e3ea-f5cd-42a1-9ce5-e39edac1aa3f);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad7:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad8 {
+    background-image: url(https://dash-api.yld.mn/api/image/c0e8c13b-3f92-465e-965e-685139392349);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 10vw;
+    width: 35vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad8:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .adG {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .iluuU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb5bd;
+    height: 40px;
+    width: 35vw;
+    border-radius: 6px;
+    color: black;
+  }
+  .iluuU:hover {
+    color: blue;
+    background-color: red;
+    cursor: pointer;
+  }
+  .sticky {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 15vw;
+    width: 20vw;
+    position: relative;
+
+    z-index: 5;
+  }
+  .gurav {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 7vw;
+    margin-top: 20px;
+  }
+  .stickyG {
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    z-index: 4;
+  }
+  .stickyD {
+    height: 540;
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 85px;
+  }
+  .duruv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 30px;
+
+    align-items: center;
+  }
+  .f1 {
+    font-size: 24px;
+  }
+  .zuras {
+    flex: 1 1;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      #a3a3a3 33%,
+      hsla(0, 0%, 100%, 0) 0
+    );
+    background-repeat: repeat-x;
+    background-size: 3px 1px;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .f2 {
+    font-size: 15px;
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 63vw;
+  }
+  .image-container3 {
+    background-image: url("https://dash-api.yld.mn/api/image/311c222a-23b0-4a53-94bc-53f4c05922c6");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 20vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    cursor: pointer;
+    border: #adb5ad 1px solid;
+  }
+  .overlay3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-container3:hover .overlay3 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-G {
+    display: flex;
+    gap: 30px;
+  }
+  .ugniiG1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .clogo {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+  }
+  .tav {
+    background-color: #0040d4;
+    height: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 15vh;
+  }
+  .clogoG {
+    border-bottom: #adb5bd 1px solid;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    height: 100px;
+    margin: 15px;
+    gap: 10px;
+  }
+  .hlogo {
+    height: 5vw;
+    width: 15vw;
+  }
+  .gad {
+    width: 330px;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .big {
+    font-size: 1.5vw;
+    font-weight: 0 !important;
+  }
+  .bigger {
+    display: flex;
+    gap: 30px;
+  }
+  .zail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1vw;
+  }
+  .gadn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border-bottom: #adb5bd 1px solid;
+    padding: 15px;
+  }
+  .idc {
+    color: white;
+    font-size: 0.8vw;
+  }
+  .zur {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .saral1 {
+    color: #adb5bd;
+    font-size: 0.7vw;
+  }
+  .saral1:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .cat:hover {
+    color: white;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .head {
+    height: 4vh;
+    width: 100vw;
+    background-color: lightgray;
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+  }
+  .but {
+    visibility: hidden;
+  }
+  .loo {
+    height: 5vw;
+    width: 10vw;
+  }
+  .cat {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5vw;
+    gap: 3px;
+  }
+  .gaduur {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .dotuur {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .gadna {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .search {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search:hover {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .searchSVG {
+    height: 18px;
+    width: 30px;
+  }
+  .block {
+    height: 3vw;
+    width: 13vw;
+    background-color: #0040d4;
+    color: white;
+    font-size: 1.5vw;
+
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block:hover {
+    background-color: white;
+    color: #0040d4;
+    cursor: pointer;
+  }
+  .ug {
+    background-color: #adb5bd;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 3vw;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 1.3vw;
+  }
+  .blink {
+    background-color: orange;
+    width: 10vw;
+    height: 3vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: black;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: anivch;
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    justify-content: center;
+  }
+  @keyframes anivch {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .Lemonade {
+    display: flex;
+    align-items: center;
+  }
+  .zurag1 {
+    background-image: url("https://dash-api.yld.mn/api/image/c76d7a96-6ba0-4b7d-80d3-41e812370818");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 55vw;
+    height: 35vw;
+    padding: 0;
+    border: #adb5bd 1px solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(247, 248, 256);
+  }
+  .overlay1 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag1:hover .overlay1 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .text1 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 1.5vw;
+  }
+  .text2 {
+    margin: 5px;
+    font-size: 1.5vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text3 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 1.5vw;
+  }
+  .text4 {
+    color: #0040d4;
+    margin: 5px;
+    border-top: #a3a3a3 1px solid;
+    font-size: 1.5vw;
+  }
+  .text7 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 1.5vw;
+  }
+  .text5 {
+    margin: 5px;
+    font-size: 1.5vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text6 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 1.5vw;
+  }
+  .back {
+    background-color: white;
+    height: 10vw;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .back1 {
+    background-color: white;
+    height: 70%;
+    width: 100%;
+    border-bottom: 0;
+    border-top: solid 1px #a3a3a3;
+
+    cursor: pointer;
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag2 {
+    background-image: url("https://dash-api.yld.mn/api/image/20ade56e-8c2a-4a20-9edb-f240f84deb1e");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: #a3a3a3 1px solid;
+
+    width: 40vw;
+    height: 35vw;
+    background-color: rgb(247, 248, 256);
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .zurag2:hover .overlay2 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .ehni {
+    display: flex;
+    gap: 1.9vw;
+    margin-top: 1.5vh;
+  }
+  .back2 {
+    background-color: white;
+
+    width: 40vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .biggest {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 5vw;
+  }
+  .hoyrdahi {
+    display: flex;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+  }
+  .scroll {
+    height: 30vw;
+    width: 30vw;
+
+    background-color: black;
+    border-radius: 6px;
+    overflow-y: scroll;
+
+    scrollbar-color: orange black;
+    border-radius: 6px;
+    scroll-behavior: smooth;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+  }
+  .spam {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+    height: 6vw;
+    width: 30vw;
+    margin: 0.5vw;
+    gap: 0.2vw;
+    font-size: 1.5vw;
+  }
+  .grad {
+    background-image: url("https://dash-api.yld.mn/api/image/7c3c37d5-408d-4a41-b89e-14a83186a76f");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height: 30vw;
+    width: 34vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 6px;
+  }
+  .overGrad {
+    gap: 5px;
+    border-radius: 6px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), transparent);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 8px;
+
+    transition: all 0.4s ease;
+  }
+
+  .grad:hover .overGrad {
+    cursor: pointer;
+    padding-top: 300px !important;
+    transition: all 0.4s ease;
+  }
+  .white {
+    color: white;
+    font-size: 1.5vw;
+  }
+  .bungu {
+    border: #adb5bd 1px solid;
+    border-radius: 6px;
+    gap: 0.5vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #adb5bd 1px solid;
+    cursor: pointer;
+    width: 30vw;
+    height: 30vw;
+  }
+  .dungu1 {
+    width: 17vw;
+    gap: 10px;
+    padding: 0.3vw;
+    color: #0040d4;
+    font-size: 1vw;
+  }
+  .dungu {
+    background-color: white;
+    border-top: #adb5bd 1px solid;
+    width: 100%;
+    gap: 10px;
+    padding: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .dungu4 {
+    margin: 0.3vw;
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  .dungu2 {
+    margin: 0.3vw;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5vw;
+  }
+  .dungu3 {
+    color: #adb5bd;
+    margin: 0.3vw;
+    font-size: 1.5vw;
+  }
+  .tomZ {
+    background-image: url(https://lemonpress.mn/assets/subscribe-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 97%;
+    height: 30vw;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jijigZ {
+    background-color: white;
+    border-radius: 24px;
+    height: 85%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .saral {
+    color: #adb5bd;
+    font-size: 1.5vw;
+  }
+  .hemjee {
+    font-size: 1.5vw;
+  }
+  .huh {
+    color: #0040d4;
+    font-size: 1.5vw;
+    margin-left: 5px;
+  }
+  .laa {
+    font-size: 1.5vw;
+  }
+  .emal {
+    border: 1px #0040d4 solid;
+    height: 2.5vw;
+    width: 13vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px;
+    font-size: 1.5vw;
+  }
+  .button {
+    height: 2.5vw;
+    width: 10vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px #0040d4 solid;
+    background-color: #0040d4;
+    font-size: 1.5vw;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0040d4 1px solid;
+    border-radius: 6px;
+    background-color: #0040d4;
+    width: 23vw;
+  }
+  .ad1 {
+    background-image: url(https://dash-api.yld.mn/api/image/ce1c9351-dd60-43f2-b566-ef46c69c0dfa);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+
+    border: 1px #adb5bd solid;
+  }
+  .over-ad1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .ad1:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ug1 {
+    color: #0040d4;
+    font-size: 1.5vw;
+  }
+  .ug2 {
+    color: black;
+    font-size: 1.5vw;
+  }
+  .ug3 {
+    color: #adb5bd;
+    font-size: 1.5vw;
+  }
+  .ug4 {
+    color: #0040d4;
+    font-size: 1.5vw;
+  }
+  .ug5 {
+    color: black;
+    font-size: 2vw;
+  }
+  .ug6 {
+    color: #adb5bd;
+    font-size: 1.5vw;
+  }
+  .ugniiG {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+    width: 90%;
+
+    background-color: white;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ad2 {
+    background-image: url(https://dash-api.yld.mn/api/image/a525a932-55bd-4e7a-974d-bdd247bb0f9b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad2:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad3 {
+    background-image: url(https://dash-api.yld.mn/api/image/ff06726d-07d9-4983-b4bf-f754206a2e2b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad3:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad4 {
+    background-image: url(https://dash-api.yld.mn/api/image/b8acef42-3997-4a3c-9203-6836a67a8c99);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad4:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad5 {
+    background-image: url(https://dash-api.yld.mn/api/image/f3f74d5a-0f6a-4dcb-abef-b29bc06db585);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+
+  .ad5:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad6 {
+    background-image: url(https://dash-api.yld.mn/api/image/dc88ebc3-655a-4885-9d92-4466f18fd3da);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad6:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad7 {
+    background-image: url(https://dash-api.yld.mn/api/image/d2f4e3ea-f5cd-42a1-9ce5-e39edac1aa3f);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad7:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad8 {
+    background-image: url(https://dash-api.yld.mn/api/image/c0e8c13b-3f92-465e-965e-685139392349);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 20vw;
+    width: 50vw;
+    border-radius: 6px;
+    display: flex;
+    border: 1px #adb5bd solid;
+  }
+  .ad8:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .adG {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .iluuU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb5bd;
+    height: 30px;
+    width: 50vw;
+    border-radius: 6px;
+    color: black;
+  }
+  .iluuU:hover {
+    color: blue;
+    background-color: red;
+    cursor: pointer;
+  }
+  .sticky {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 35vw;
+    width: 35vw;
+    position: relative;
+
+    z-index: 5;
+  }
+  .gurav {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 7vw;
+    margin-top: 20px;
+  }
+  .stickyG {
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    z-index: 4;
+  }
+  .stickyD {
+    height: 540px;
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    top: 50px;
+  }
+  .duruv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 30px;
+
+    align-items: center;
+  }
+  .f1 {
+    font-size: 24px;
+  }
+  .zuras {
+    flex: 1 1;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      #a3a3a3 33%,
+      hsla(0, 0%, 100%, 0) 0
+    );
+    background-repeat: repeat-x;
+    background-size: 3px 1px;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .f2 {
+    font-size: 15px;
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+  }
+  .image-container3 {
+    background-image: url("https://dash-api.yld.mn/api/image/311c222a-23b0-4a53-94bc-53f4c05922c6");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 30vw;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    cursor: pointer;
+    border: #adb5ad 1px solid;
+  }
+  .overlay3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-container3:hover .overlay3 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-G {
+    display: flex;
+    gap: 30px;
+  }
+  .ugniiG1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .clogo {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+  }
+  .tav {
+    background-color: #0040d4;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 15vh;
+  }
+  .clogoG {
+    border-bottom: #adb5bd 1px solid;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    margin: 25px;
+
+    gap: 20px;
+  }
+  .hlogo {
+    height: 5vw;
+    width: 20vw;
+  }
+  .gad {
+    width: 330px;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .big {
+    font-size: 2.5vw;
+    font-weight: 0 !important;
+  }
+  .bigger {
+    display: flex;
+    gap: 30px;
+  }
+  .zail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 1vw;
+  }
+  .gadn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    border-bottom: #adb5bd 1px solid;
+    padding: 15px;
+  }
+  .idc {
+    color: white;
+    font-size: 1.5vw;
+  }
+  .zur {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .saral1 {
+    color: #adb5bd;
+    font-size: 1.5vw;
+  }
+  .saral1:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .cat:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .luu {
+    font-size: 1.5vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .head {
+    height: 4vh;
+    width: 100vw;
+    background-color: lightgray;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px !important;
+    left: 0px;
+    z-index: 999;
+  }
+  .loo {
+    height: 15vw;
+    width: 20vw;
+  }
+
+  .cat {
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5vw;
+    gap: 3px;
+    width: 0;
+
+    visibility: collapse;
+  }
+  .gaduur {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .dotuur {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .gadna {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .search {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search:hover {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .searchSVG {
+    height: 18px;
+    width: 30px;
+  }
+  .but {
+    visibility: visible;
+  }
+  .block {
+    height: 0;
+    width: 0;
+    background-color: #0040d4;
+    color: white;
+    font-size: 1.5vw;
+    visibility: collapse;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block:hover {
+    background-color: white;
+    color: #0040d4;
+    cursor: pointer;
+  }
+  .ug {
+    background-color: #adb5bd;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 5vw;
+    width: 83vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 2vw;
+  }
+  .blink {
+    background-color: orange;
+    width: 13vw;
+    height: 5vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: black;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: anivch;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    justify-content: center;
+  }
+  @keyframes anivch {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .Lemonade {
+    display: flex;
+    align-items: center;
+  }
+  .zurag1 {
+    background-image: url("https://dash-api.yld.mn/api/image/c76d7a96-6ba0-4b7d-80d3-41e812370818");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90vw;
+    height: 60vw;
+    padding: 0;
+    border: #adb5bd 1px solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(247, 248, 256);
+  }
+  .overlay1 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag1:hover .overlay1 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .text1 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text2 {
+    margin: 5px;
+    font-size: 3vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text3 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text4 {
+    color: #0040d4;
+    margin: 5px;
+    border-top: #a3a3a3 1px solid;
+    font-size: 2vw;
+  }
+  .text7 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text5 {
+    margin: 5px;
+    font-size: 3vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text6 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .back {
+    background-color: white;
+    height: 15vw;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .back1 {
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    border-bottom: 0;
+    border-top: solid 1px #a3a3a3;
+
+    cursor: pointer;
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag2 {
+    background-image: url("https://dash-api.yld.mn/api/image/20ade56e-8c2a-4a20-9edb-f240f84deb1e");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: #a3a3a3 1px solid;
+    margin-top: 10vh;
+
+    width: 90vw;
+    height: 60vw;
+    background-color: rgb(247, 248, 256);
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .zurag2:hover .overlay2 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .ehni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.9vw;
+    margin-top: 1.5vh;
+  }
+  .back2 {
+    background-color: white;
+
+    width: 90vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .biggest {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 5vw;
+  }
+  .hoyrdahi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+  }
+  .scroll {
+    height: 45vw;
+    width: 90vw;
+
+    background-color: black;
+    border-radius: 6px;
+    overflow-y: scroll;
+    padding: 10px;
+
+    scrollbar-color: orange black;
+    border-radius: 6px;
+    scroll-behavior: smooth;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+  }
+  .spam {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+    height: 6vw;
+    width: 85vw;
+    margin: 1vw;
+    gap: 0.5vw;
+    font-size: 2vw;
+  }
+  .grad {
+    background-image: url("https://dash-api.yld.mn/api/image/7c3c37d5-408d-4a41-b89e-14a83186a76f");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height: 45vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 6px;
+  }
+  .overGrad {
+    gap: 5px;
+    border-radius: 6px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), transparent);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 8px;
+
+    transition: all 0.4s ease;
+  }
+
+  .grad:hover .overGrad {
+    cursor: pointer;
+    padding-top: 300px !important;
+    transition: all 0.4s ease;
+  }
+  .white {
+    color: white;
+    font-size: 3vw;
+  }
+  .bungu {
+    border: #adb5bd 1px solid;
+    border-radius: 6px;
+    gap: 1vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #adb5bd 1px solid;
+    cursor: pointer;
+    width: 90vw;
+    height: 40vw;
+  }
+  .dungu1 {
+    gap: 10px;
+    padding: 0.3vw;
+    color: #0040d4;
+    font-size: 2vw;
+  }
+  .dungu {
+    background-color: white;
+    border-top: #adb5bd 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+  }
+  .dungu4 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 0.5vw;
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  .dungu2 {
+    margin: 0.5vw;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3vw;
+  }
+  .dungu3 {
+    color: #adb5bd;
+    margin: 0.5vw;
+    font-size: 2vw;
+  }
+  .tomZ {
+    background-image: url(https://lemonpress.mn/assets/subscribe-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vw;
+    margin-top: 20px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jijigZ {
+    background-color: white;
+    border-radius: 12px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .saral {
+    color: #adb5bd;
+    font-size: 2vw;
+  }
+  .hemjee {
+    font-size: 2vw;
+  }
+  .huh {
+    color: #0040d4;
+    font-size: 2vw;
+    margin-left: 5px;
+  }
+  .laa {
+    font-size: 1.5vw;
+  }
+  .emal {
+    border: 1px #0040d4 solid;
+    height: 3vw;
+    width: 50vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px;
+    font-size: 2vw;
+  }
+  .button {
+    height: 3vw;
+    width: 15vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px #0040d4 solid;
+    background-color: #0040d4;
+    font-size: 2vw;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0040d4 1px solid;
+    border-radius: 6px;
+    background-color: #0040d4;
+    width: 60vw;
+  }
+  .ad1 {
+    background-image: url(https://dash-api.yld.mn/api/image/ce1c9351-dd60-43f2-b566-ef46c69c0dfa);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border: 1px #adb5bd solid;
+  }
+  .over-ad1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .ad1:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ug1 {
+    color: #0040d4;
+    font-size: 3vw;
+  }
+  .ug2 {
+    color: black;
+    font-size: 4vw;
+  }
+  .ug3 {
+    color: #adb5bd;
+    font-size: 3vw;
+  }
+  .ug4 {
+    color: #0040d4;
+    font-size: 1.5vw;
+  }
+  .ug5 {
+    color: black;
+    font-size: 2.5vw;
+  }
+  .ug6 {
+    color: #adb5bd;
+    font-size: 1.5vw;
+  }
+  .ugniiG {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    width: 100%;
+    height: 40%;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ad2 {
+    background-image: url(https://dash-api.yld.mn/api/image/a525a932-55bd-4e7a-974d-bdd247bb0f9b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad2:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad3 {
+    background-image: url(https://dash-api.yld.mn/api/image/ff06726d-07d9-4983-b4bf-f754206a2e2b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad3:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad4 {
+    background-image: url(https://dash-api.yld.mn/api/image/b8acef42-3997-4a3c-9203-6836a67a8c99);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad4:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad5 {
+    background-image: url(https://dash-api.yld.mn/api/image/f3f74d5a-0f6a-4dcb-abef-b29bc06db585);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+
+  .ad5:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad6 {
+    background-image: url(https://dash-api.yld.mn/api/image/dc88ebc3-655a-4885-9d92-4466f18fd3da);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad6:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad7 {
+    background-image: url(https://dash-api.yld.mn/api/image/d2f4e3ea-f5cd-42a1-9ce5-e39edac1aa3f);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad7:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad8 {
+    background-image: url(https://dash-api.yld.mn/api/image/c0e8c13b-3f92-465e-965e-685139392349);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad8:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .adG {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .iluuU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb5bd;
+    height: 30px;
+    width: 96vw;
+    border-radius: 6px;
+    color: black;
+  }
+  .iluuU:hover {
+    color: blue;
+    background-color: red;
+    cursor: pointer;
+  }
+  .sticky {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vw;
+    width: 96vw;
+    position: relative;
+
+    z-index: 5;
+  }
+  .gurav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 20px;
+  }
+  .stickyG {
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    z-index: 4;
+  }
+  .stickyD {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    position: sticky;
+    top: 50px;
+  }
+  .duruv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 30px;
+
+    align-items: center;
+  }
+  .f1 {
+    font-size: 24px;
+  }
+  .zuras {
+    flex: 1 1;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      #a3a3a3 33%,
+      hsla(0, 0%, 100%, 0) 0
+    );
+    background-repeat: repeat-x;
+    background-size: 3px 1px;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .f2 {
+    font-size: 15px;
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95vw;
+  }
+  .image-container3 {
+    background-image: url("https://dash-api.yld.mn/api/image/311c222a-23b0-4a53-94bc-53f4c05922c6");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 96vw;
+    height: 57vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    cursor: pointer;
+    border: #adb5ad 1px solid;
+  }
+  .fle {
+    margin-left: 2.2vw;
+  }
+  .overlay3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-container3:hover .overlay3 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-G {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .ugniiG1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 40%;
+
+    padding: 10px;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .clogo {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+  }
+  .tav {
+    background-color: #0040d4;
+    height: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 15vh;
+  }
+  .clogoG {
+    border-bottom: #adb5bd 1px solid;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    margin: 25px;
+
+    gap: 20px;
+  }
+  .hlogo {
+    height: 5vw;
+    width: 20vw;
+  }
+  .gad {
+    width: 330px;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .big {
+    font-size: 2.5vw;
+    font-weight: 0 !important;
+  }
+  .bigger {
+    display: flex;
+    gap: 30px;
+  }
+  .zail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 2vw;
+  }
+  .gadn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+    border-bottom: #adb5bd 1px solid;
+    padding: 15px;
+  }
+  .idc {
+    color: white;
+    font-size: 2vw;
+    background-color: #0040d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zur {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .saral1 {
+    color: #adb5bd;
+    font-size: 2vw;
+  }
+  .saral1:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .cat:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .luu {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .head {
+    height: 5vh;
+    width: 100vw;
+    background-color: lightgray;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px !important;
+    left: 0px;
+    z-index: 999;
+  }
+  .loo {
+    height: 80px;
+    width: 100px;
+  }
+
+  .cat {
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1.5vw;
+    gap: 3px;
+    width: 0;
+
+    visibility: collapse;
+  }
+  .gaduur {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    justify-content: space-between;
+    width: 95vw;
+  }
+  .dotuur {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .gadna {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .search {
+    background-color: aliceblue;
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .search:hover {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .searchSVG {
+    height: 18px;
+    width: 30px;
+  }
+  .but {
+    visibility: visible;
+  }
+  .block {
+    height: 0;
+    width: 0;
+    background-color: #0040d4;
+    color: white;
+    font-size: 1.5vw;
+    visibility: collapse;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .block:hover {
+    background-color: white;
+    color: #0040d4;
+    cursor: pointer;
+  }
+  .ug {
+    background-color: #adb5bd;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    height: 5vw;
+    width: 83vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 2vw;
+  }
+  .blink {
+    background-color: orange;
+    width: 13vw;
+    height: 5vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    color: black;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: anivch;
+    display: flex;
+    align-items: center;
+    font-size: 2vw;
+    justify-content: center;
+  }
+  @keyframes anivch {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  .Lemonade {
+    display: flex;
+    align-items: center;
+  }
+  .zurag1 {
+    background-image: url("https://dash-api.yld.mn/api/image/c76d7a96-6ba0-4b7d-80d3-41e812370818");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 96vw;
+    height: 55vw;
+    padding: 0;
+    border: #adb5bd 1px solid;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: rgb(247, 248, 256);
+  }
+  .overlay1 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag1:hover .overlay1 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .text1 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text2 {
+    margin: 5px;
+    font-size: 3vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text3 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text4 {
+    color: #0040d4;
+    margin: 5px;
+    border-top: #a3a3a3 1px solid;
+    font-size: 2vw;
+  }
+  .text7 {
+    color: #0040d4;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .text5 {
+    margin: 5px;
+    font-size: 3vw;
+
+    font-family: "Courier New", Courier, monospace;
+  }
+  .text6 {
+    color: #adb5bd;
+    margin: 5px;
+    font-size: 2vw;
+  }
+  .back {
+    background-color: white;
+    height: 27%;
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .back1 {
+    background-color: white;
+    height: 40%;
+    width: 100%;
+    border-bottom: 0;
+    border-top: solid 1px #a3a3a3;
+
+    cursor: pointer;
+  }
+  .overlay2 {
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .zurag2 {
+    background-image: url("https://dash-api.yld.mn/api/image/20ade56e-8c2a-4a20-9edb-f240f84deb1e");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: #a3a3a3 1px solid;
+    margin-top: 6vh;
+
+    width: 96vw;
+    height: 80vw;
+    background-color: rgb(247, 248, 256);
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .zurag2:hover .overlay2 {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  .ehni {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.9vw;
+    margin-top: 1.5vh;
+  }
+  .back2 {
+    background-color: white;
+
+    width: 96vw;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border: 1px solid #adb5bd;
+    cursor: pointer;
+  }
+  .biggest {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5vw;
+    margin-top: 5vw;
+  }
+  .hoyrdahi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+  }
+  .scroll {
+    height: 45vw;
+    width: 96vw;
+
+    background-color: black;
+    border-radius: 6px;
+    overflow-y: scroll;
+    padding: 10px;
+
+    scrollbar-color: orange black;
+    border-radius: 6px;
+    scroll-behavior: smooth;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+  }
+  .spam {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-top: #adb5bd 1px solid;
+    border-bottom: #adb5bd 1px solid;
+    height: 6vw;
+    width: 80vw;
+    margin-top: 6vw;
+    gap: 3vw;
+    font-size: 3vw;
+  }
+  .grad {
+    background-image: url("https://dash-api.yld.mn/api/image/7c3c37d5-408d-4a41-b89e-14a83186a76f");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+    height: 45vw;
+    width: 96vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 6px;
+  }
+  .overGrad {
+    gap: 5px;
+    border-radius: 6px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.774), transparent);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 8px;
+
+    transition: all 0.4s ease;
+  }
+
+  .grad:hover .overGrad {
+    cursor: pointer;
+    padding-top: 300px !important;
+    transition: all 0.4s ease;
+  }
+  .white {
+    color: white;
+    font-size: 3vw;
+  }
+  .bungu {
+    border: #adb5bd 1px solid;
+    border-radius: 6px;
+    gap: 1vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: #adb5bd 1px solid;
+    cursor: pointer;
+    width: 96vw;
+    height: 45vw;
+  }
+  .dungu1 {
+    gap: 10px;
+    padding: 0.3vw;
+    color: #0040d4;
+    font-size: 2vw;
+  }
+  .dungu {
+    background-color: white;
+    border-top: #adb5bd 1px solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5vw;
+    font-size: 1.5vw;
+  }
+  .dungu4 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 0.5vw;
+    width: 100%;
+    font-size: 1.5vw;
+  }
+  .dungu2 {
+    margin: 0.5vw;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 3vw;
+  }
+  .dungu3 {
+    color: #adb5bd;
+    margin: 0.5vw;
+    font-size: 2vw;
+  }
+  .tomZ {
+    background-image: url(https://lemonpress.mn/assets/subscribe-cover.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40vw;
+    margin-top: 20px;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .jijigZ {
+    background-color: white;
+    border-radius: 12px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .saral {
+    color: #adb5bd;
+    font-size: 2.5vw;
+  }
+  .hemjee {
+    font-size: 2.5vw;
+  }
+  .huh {
+    color: #0040d4;
+    font-size: 2.5vw;
+    margin-left: 5px;
+  }
+  .laa {
+    font-size: 1.8vw;
+  }
+  .emal {
+    border: 1px #0040d4 solid;
+    height: 3vw;
+    width: 50vw;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding: 20px;
+    font-size: 2.5vw;
+  }
+  .button {
+    height: 3vw;
+    width: 25vw;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: 1px #0040d4 solid;
+    background-color: #0040d4;
+    font-size: 2.5vw;
+  }
+  .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0040d4 1px solid;
+    border-radius: 6px;
+    background-color: #0040d4;
+    width: 60vw;
+  }
+  .ad1 {
+    background-image: url(https://dash-api.yld.mn/api/image/ce1c9351-dd60-43f2-b566-ef46c69c0dfa);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    border: 1px #adb5bd solid;
+  }
+  .over-ad1 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .ad1:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ug1 {
+    color: #0040d4;
+    font-size: 3vw;
+  }
+  .ug2 {
+    color: black;
+    font-size: 4vw;
+  }
+  .ug3 {
+    color: #adb5bd;
+    font-size: 3vw;
+  }
+  .ug4 {
+    color: #0040d4;
+    font-size: 2.5vw;
+  }
+  .ug5 {
+    color: black;
+    font-size: 3vw;
+  }
+  .ug6 {
+    color: #adb5bd;
+    font-size: 2.5vw;
+  }
+  .ugniiG {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 15px;
+    width: 100%;
+    height: 40%;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .ad2 {
+    background-image: url(https://dash-api.yld.mn/api/image/a525a932-55bd-4e7a-974d-bdd247bb0f9b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad2:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad3 {
+    background-image: url(https://dash-api.yld.mn/api/image/ff06726d-07d9-4983-b4bf-f754206a2e2b);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad3:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad4 {
+    background-image: url(https://dash-api.yld.mn/api/image/b8acef42-3997-4a3c-9203-6836a67a8c99);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad4:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad5 {
+    background-image: url(https://dash-api.yld.mn/api/image/f3f74d5a-0f6a-4dcb-abef-b29bc06db585);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+
+  .ad5:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad6 {
+    background-image: url(https://dash-api.yld.mn/api/image/dc88ebc3-655a-4885-9d92-4466f18fd3da);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad6:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .ad7 {
+    background-image: url(https://dash-api.yld.mn/api/image/d2f4e3ea-f5cd-42a1-9ce5-e39edac1aa3f);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad7:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .ad8 {
+    background-image: url(https://dash-api.yld.mn/api/image/c0e8c13b-3f92-465e-965e-685139392349);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 57vw;
+    width: 96vw;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border: 1px #adb5bd solid;
+  }
+  .ad8:hover .over-ad1 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  .adG {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .iluuU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb5bd;
+    height: 30px;
+    width: 96vw;
+    border-radius: 6px;
+    color: black;
+  }
+  .iluuU:hover {
+    color: blue;
+    background-color: red;
+    cursor: pointer;
+  }
+  .sticky {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vw;
+    width: 96vw;
+    position: relative;
+
+    z-index: 5;
+  }
+  .gurav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 20px;
+  }
+  .stickyG {
+    display: flex;
+    flex-direction: column;
+
+    position: sticky;
+    z-index: 4;
+  }
+  .stickyD {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    position: sticky;
+    top: 50px;
+  }
+  .duruv {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 30px;
+
+    align-items: center;
+  }
+  .f1 {
+    font-size: 24px;
+  }
+  .zuras {
+    flex: 1 1;
+    height: 1px;
+    background-image: linear-gradient(
+      90deg,
+      #a3a3a3 33%,
+      hsla(0, 0%, 100%, 0) 0
+    );
+    background-repeat: repeat-x;
+    background-size: 3px 1px;
+    background-position-x: center;
+    background-position-y: bottom;
+  }
+  .f2 {
+    font-size: 15px;
+  }
+  .h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 95vw;
+  }
+  .image-container3 {
+    background-image: url("https://dash-api.yld.mn/api/image/311c222a-23b0-4a53-94bc-53f4c05922c6");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    width: 96vw;
+    height: 57vw;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    cursor: pointer;
+    border: #adb5ad 1px solid;
+  }
+  .fle {
+    margin-left: 2.2vw;
+  }
+  .overlay3 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-container3:hover .overlay3 {
+    opacity: 0.5;
+    cursor: pointer;
+    background: rgb(0, 0, 0);
+  }
+  .image-G {
+    display: flex;
+
+    flex-wrap: wrap;
+  }
+  .ugniiG1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    height: 40%;
+
+    padding: 10px;
+
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  .clogo {
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+  }
+  .tav {
+    background-color: #0040d4;
+    height: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 15vh;
+  }
+  .clogoG {
+    border-bottom: #adb5bd 1px solid;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    height: 60px;
+    margin: 25px;
+
+    gap: 20px;
+  }
+  .hlogo {
+    height: 5vw;
+    width: 20vw;
+  }
+  .gad {
+    width: 330px;
+    color: white;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .big {
+    font-size: 2.5vw;
+    font-weight: 0 !important;
+  }
+  .bigger {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    gap: 30px;
+    margin-top: 10px;
+  }
+  .zail {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 2vw;
+  }
+  .gadn {
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+    height: 70%;
+    border-bottom: #adb5bd 1px solid;
+    padding: 15px;
+  }
+  .idc {
+    color: white;
+    font-size: 2vw;
+    background-color: #0040d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .zur {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .saral1 {
+    color: #adb5bd;
+    font-size: 2vw;
+  }
+  .saral1:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .cat:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .luu {
+    font-size: 2vw;
+  }
+}
